@@ -1,0 +1,10 @@
+---
+ - name: Creating the users.
+   user:
+     name: "{{ username }}"
+     password" "{{ 'ansible' | password_hash('sha512') }}"
+     comment: "{{ full }}"
+     shell: /bin/bash
+     group: wheel
+     groups: wheel
+     home: /home/{{ username }}
