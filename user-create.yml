@@ -1,0 +1,5 @@
+---
+- host
+  become: true
+  roles:
+   - user-create
