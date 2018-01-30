@@ -1,5 +1,6 @@
----
-- host
+- 
   become: true
-  roles:
-   - user-create
+  host: all
+  roles: 
+    - user-create
+
